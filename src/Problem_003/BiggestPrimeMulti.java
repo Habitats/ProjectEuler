@@ -2,6 +2,8 @@ package Problem_003;
 
 import java.util.ArrayList;
 
+import static util.Utilities.isPrime;
+
 public class BiggestPrimeMulti {
 
   private long max = 600851475143L;
@@ -38,20 +40,5 @@ public class BiggestPrimeMulti {
     System.out.println(primeLst.get(primeLst.size() - 1));
   }
 
-  public boolean isPrime(int n) {
-    if (n == 2) {
-      return true;
-    }
-    if (n == 1 || n % 2 == 0) {
-      return false;
-    }
-
-    for (int i = 3; i < n; i += 2) {
-      if (n != i && n % i == 0) {
-        return false;
-      }
-    }
-    return true;
-  }
 
 }

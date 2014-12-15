@@ -2,14 +2,14 @@ package Problem_007;
 
 import java.util.ArrayList;
 
-public class findPrime {
+public class FindPrime {
 
 
   private ArrayList<Integer> primeLst = new ArrayList<Integer>();
   static long start = System.currentTimeMillis();
 
   public static void main(String[] args) {
-    findPrime bpm = new findPrime();
+    FindPrime bpm = new FindPrime();
 
     bpm.findPrime1();
 
